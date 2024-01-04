@@ -1,0 +1,43 @@
+.game-container {
+    position: relative;
+    width: 66vw; /* Two-thirds of the screen width */
+    height: 100vh; /* Full height of the screen */
+    border: 1px solid #333;
+    margin: 0 auto; /* Center the game container horizontally */
+    max-width: 100%; /* Ensuring it doesn't exceed the screen width */
+    background-color: #1a1a1a; /* Dark background */
+}
+
+.player {
+    position: absolute;
+    width: 50px; /* Width of the plane */
+    height: 25px; /* Height of the plane */
+    background: url('imgs/plane.png') no-repeat center center; /* Replace with your plane image */
+    background-size: contain;
+}
+
+.obstacle {
+    position: absolute;
+    width: 60px; /* Width of the cloud */
+    height: 40px; /* Height of the cloud */
+    background: url('imgs/cloud.png') no-repeat center center; /* Replace with your cloud image */
+    background-size: contain;
+}
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.game-over button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
